@@ -14,8 +14,8 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="w-full px-6 h-[10vh] py-4 bg-white shadow-sm">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <nav className="w-full bg-white shadow-sm fixed top-0 left-0 right-0 z-10">
+      <div className=" h-[10vh] mx-auto flex items-center justify-between px-5">
         <div className="flex-1">
           <Link href="/" className="text-xl font-bold">
             Logo
@@ -33,6 +33,7 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
+          <button className="bg-blue-500 text-white px-4 text-xl py-2 rounded-md">Get Started</button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -60,8 +61,8 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="absolute top-16 left-0 right-0 bg-white shadow-md md:hidden">
-            <div className="flex flex-col py-4">
+          <div className="absolute top-16 left-0 right-0 bg-white shadow-md md:hidden z-10">
+            <div className="flex flex-col items-start py-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -72,6 +73,7 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
+              <button className="bg-blue-500 mx-6 my-2 px-4 py-2 rounded-md text-white">Get Started</button>
             </div>
           </div>
         )}

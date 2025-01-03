@@ -1,9 +1,22 @@
 export default function Hero() {
   return (
-    <section className="h-[90vh] flex flex-col gap-10 px-5 pt-20 items-center">
-      <h1 className="text-center text-4xl">Empowering Your Business with Smarter AI Agents</h1>
-      <h2 className="text-center text-2xl">Automate repetitive tasks, minimize errors, and scale your business efficiently.</h2>
-      <button className="bg-blue-500 text-white px-4 text-3xl py-2 rounded-md">Get Started</button>
+    <section className="h-[100vh] bg-black flex flex-col pt-48 gap-10 px-5 items-center relative overflow-hidden">
+      <div className="absolute inset-0">
+        {[...Array(50)].map((_, index) => (
+          <div
+            key={index}
+            className="absolute w-[2px] h-[2px] bg-white rounded-full animate-twinkle"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`
+            }}
+          />
+        ))}
+      </div>
+      <h1 className="text-center text-4xl text-white font-bold">Empowering Your Business with Smarter AI Agents</h1>
+      <h2 className="text-center text-2xl text-white">Automate repetitive tasks, minimize errors, and scale your business efficiently.</h2>
+      <button className="bg-blue-500 text-white px-4 text-3xl py-2 rounded-md">Learn More</button>
     </section>
   );
 }
