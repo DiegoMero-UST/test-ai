@@ -1,8 +1,13 @@
-export default function Home() {
-  return (
-    <section className="bg-[#E5E5E5] h-screen">
-      <h2>Agentify.AI</h2>
+import CoreFeatures from "./components/core-features";
+import Hero from "./components/hero";
+import Video from "./components/video"; 
 
-    </section>
+export default function Features() {
+  return (
+    <div>
+      <Hero />
+      <CoreFeatures />
+      <Video />
+    </div>
   );
 }

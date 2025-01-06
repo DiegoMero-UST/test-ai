@@ -36,9 +36,10 @@ export default function UseCases() {
             <div className="flex flex-col gap-3 p-5 border-2 border-[#000] rounded-md">
               <Image
                 src='/casestudy1.png'
-                width={400}
-                height={200}
+                width={1000}
+                height={1000}
                 alt={`Case ${index}`}
+                className="object-contain"
               />
               <h4 className="text-2xl">Company {index}</h4>
               <h5 className="text-xl">Optimizing the Loan Approval Process for a Financial Institution</h5>

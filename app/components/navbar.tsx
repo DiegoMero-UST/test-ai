@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-white shadow-sm fixed top-0 left-0 right-0 z-10">
-      <div className=" h-[10vh] mx-auto flex items-center justify-between px-5">
+      <div className=" h-[15vh] mx-auto flex items-center justify-between px-5">
         <div className="flex-1">
           <Link href="/" className="text-xl font-bold">
             Logo
@@ -43,7 +43,7 @@ const Navbar = () => {
           aria-label="Toggle menu"
         >
           <svg
-            className="w-6 h-6"
+            className="w-10 h-10"
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -61,19 +61,19 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="absolute top-16 left-0 right-0 bg-white shadow-md md:hidden z-10">
+          <div className="absolute top-24 left-0 right-0 bg-white shadow-md md:hidden z-10">
             <div className="flex flex-col items-start py-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="px-6 py-2 text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+                  className="px-6 py-2 text-3xl text-gray-600 hover:bg-gray-50 hover:text-gray-900"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
                 </Link>
               ))}
-              <button className="bg-blue-500 mx-6 my-2 px-4 py-2 rounded-md text-white">Get Started</button>
+              <button className="bg-blue-500 mx-6 my-2 px-4 py-2 rounded-md text-white text-3xl">Get Started</button>
             </div>
           </div>
         )}
