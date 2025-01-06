@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="h-[100vh] bg-black flex flex-col pt-48 gap-10 px-5 items-center relative overflow-hidden">
+    <section className="h-svh bg-black flex flex-col pt-48 gap-10 px-5 items-center relative overflow-hidden">
       <div className="absolute inset-0">
         {[...Array(50)].map((_, index) => (
           <div
