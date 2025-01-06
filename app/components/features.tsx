@@ -45,7 +45,7 @@ export default function Features() {
             alt="Metrics"
             width={1000}
             height={1000}
-            
+            className="object-contain"
           />
           <h3 className="text-2xl">Advanced Analytics</h3>
           <p className="text-lg">Simplify communication, improve customer experience with innovative solutions.</p>
