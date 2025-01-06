@@ -8,8 +8,8 @@ export default function CoreFeatures() {
         {/* AI Agent Customization */}
         <li className="flex flex-col gap-4 p-6 border-2 border-gray-200 rounded-lg hover:border-blue-500 transition-colors">
           <Image src="/botcustom2.png" alt="AI Agent Customization" width={1000} height={1000} className="object-contain" />
-          <h3 className="text-2xl font-bold">AI Agent Customization</h3>
-          <ul className="space-y-3 text-gray-600 list-disc pl-4">
+          <h3 className="text-3xl font-bold">AI Agent Customization</h3>
+          <ul className="space-y-3 text-gray-600 list-disc pl-4 text-xl">
             <li>Tailor your AI assistant to your specific needs and workflows.</li>
             <li>Fine-tune AI behavior and capabilities for optimal performance.</li>
             <li>Create custom AI agents with unique skills and personalities.</li>
@@ -19,8 +19,8 @@ export default function CoreFeatures() {
         {/* Task Automation */}
         <li className="flex flex-col gap-4 p-6 border-2 border-gray-200 rounded-lg hover:border-blue-500 transition-colors">
           <Image src="/botcustom2.png" alt="Task Automation" width={1000} height={1000} className="object-contain" />
-          <h3 className="text-2xl font-bold">Task Automation</h3>
-          <ul className="space-y-3 text-gray-600 list-disc pl-4">
+          <h3 className="text-3xl font-bold">Task Automation</h3>
+          <ul className="space-y-3 text-gray-600 list-disc pl-4 text-xl">
             <li>Automate repetitive and time-consuming tasks with AI.</li>
             <li>Free up your team to focus on high-value work.</li>
             <li>Increase efficiency and productivity across your organization.</li>
@@ -30,8 +30,8 @@ export default function CoreFeatures() {
         {/* Real-Time Insights */}
         <li className="flex flex-col gap-4 p-6 border-2 border-gray-200 rounded-lg hover:border-blue-500 transition-colors">
           <Image src="/botcustom2.png" alt="Real-Time Insights" width={1000} height={1000} className="object-contain" />
-          <h3 className="text-2xl font-bold">Real-Time Insights and Analytics</h3>
-          <ul className="space-y-3 text-gray-600 list-disc pl-4">
+          <h3 className="text-3xl font-bold">Real-Time Insights and Analytics</h3>
+          <ul className="space-y-3 text-gray-600 list-disc pl-4 text-xl">
             <li>Gain valuable insights into AI performance and user behavior.</li>
             <li>Track key metrics and identify areas for improvement.</li>
             <li>Make data-driven decisions to optimize your AI workflows.</li>
@@ -41,8 +41,8 @@ export default function CoreFeatures() {
         {/* Integration */}
         <li className="flex flex-col gap-4 p-6 border-2 border-gray-200 rounded-lg hover:border-blue-500 transition-colors">
           <Image src="/botcustom2.png" alt="Integration with Popular Tools" width={1000} height={1000} className="object-contain" />
-          <h3 className="text-2xl font-bold">Integration with Popular Tools</h3>
-          <ul className="space-y-3 text-gray-600 list-disc pl-4">
+          <h3 className="text-3xl font-bold">Integration with Popular Tools</h3>
+          <ul className="space-y-3 text-gray-600 list-disc pl-4 text-xl">
             <li>Seamlessly integrate AI into your existing tech stack.</li>
             <li>Connect with popular business tools for a unified experience.</li>
             <li>Improve data flow and streamline workflows across your organization.</li>
