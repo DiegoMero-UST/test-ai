@@ -16,7 +16,7 @@ export default function Hero() {
       </div>
       <h1 className="text-center text-4xl text-white font-bold">Empowering Your Business with Smarter AI Agents</h1>
       <h2 className="text-center text-2xl text-white">Automate repetitive tasks, minimize errors, and scale your business efficiently.</h2>
-      <button className="bg-blue-500 text-white px-4 text-3xl py-2 rounded-md">Learn More</button>
+      <button className="bg-[#3386ff] text-white px-4 text-3xl py-2 rounded-md">Learn More</button>
     </section>
   );
 }
