@@ -6,11 +6,11 @@ export default function BlogPost() {
       category: "AI Trends",
       readTime: "5 min read",
       date: "Mar 15, 2024",
-      image: "/blog/ai-automation.jpg",
+      image: "/botcustom.png",
       author: {
         name: "Dr. Sarah Chen",
         role: "AI Research Director",
-        avatar: "/team/sarah-chen.jpg"
+        avatar: "/avatar.png"
       },
       tags: ["AI", "Automation", "Future of Work"]
     },
@@ -20,11 +20,11 @@ export default function BlogPost() {
       category: "Business Strategy",
       readTime: "8 min read",
       date: "Mar 12, 2024",
-      image: "/blog/business-efficiency.jpg",
+      image: "/botcustom.png",
       author: {
         name: "James Wilson",
         role: "Business Solutions Expert",
-        avatar: "/team/james-wilson.jpg"
+        avatar: "/avatar.png"
       },
       tags: ["Efficiency", "Implementation", "ROI"]
     },
@@ -34,11 +34,11 @@ export default function BlogPost() {
       category: "Technology",
       readTime: "6 min read",
       date: "Mar 10, 2024",
-      image: "/blog/machine-learning.jpg",
+      image: "/botcustom.png",
       author: {
         name: "Maria Rodriguez",
         role: "Tech Lead",
-        avatar: "/team/maria-rodriguez.jpg"
+        avatar: "/avatar.png"
       },
       tags: ["Machine Learning", "Technology", "Innovation"]
     }

@@ -26,7 +26,7 @@ export default function Hero() {
           Automate repetitive tasks, minimize errors, and scale your business efficiently.
         </h2>
         
-        <button className="bg-blue-500 text-white px-4 text-4xl py-2 rounded-md lg:text-5xl hover:bg-blue-600 transition-colors xl:text-6xl xl:px-10 xl:py-5">
+        <button className="bg-blue-600 font-semibold hover:bg-blue-700 transition-colors text-white px-4 text-4xl py-2 rounded-md lg:text-5xl xl:text-6xl xl:px-10 xl:py-5">
           Get Started
         </button>
       </div>

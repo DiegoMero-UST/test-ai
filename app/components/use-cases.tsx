@@ -44,7 +44,7 @@ export default function UseCases() {
               />
               <h4 className="text-2xl">Company {index}</h4>
               <h5 className="text-xl">Optimizing the Loan Approval Process for a Financial Institution</h5>
-              <button className="text-xl py-3 flex justify-center items-center gap-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors">
+              <button className="text-xl py-3 flex justify-center items-center gap-3 bg-blue-600 font-semibold hover:bg-blue-700 transition-colors text-white rounded-md">
                 Keep Reading
               </button>
             </div>
