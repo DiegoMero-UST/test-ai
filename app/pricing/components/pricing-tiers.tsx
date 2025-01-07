@@ -41,7 +41,7 @@ export default function PricingTiers() {
   ];
 
   return (
-    <section className="py-40 px-5 bg-gray-50">
+    <section className="pt-40 pb-20 px-5 bg-gray-50">
       <h2 className="text-4xl font-bold text-center mb-16">Looking for your best fit?</h2>
       <h3 className="text-3xl font-bold text-center mb-16">We got you covered!</h3>
       <ul className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
