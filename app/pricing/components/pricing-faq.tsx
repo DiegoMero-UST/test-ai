@@ -37,7 +37,7 @@ export default function PricingFAQ() {
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
         
-        <ul className="space-y-4">
+        <ul className="space-y-4 md:px-20">
           {faqs.map((faq, index) => (
             <li key={index} className="border-b border-gray-200 last:border-0">
               <button

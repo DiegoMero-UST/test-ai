@@ -14,26 +14,26 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="w-full bg-white shadow-sm fixed top-0 left-0 right-0 z-10">
+    <nav className="w-full bg-white shadow-sm fixed top-0 left-0 right-0 z-10 md:px-5 lg:px-10 xl:px-20">
       <div className=" h-[15vh] mx-auto flex items-center justify-between px-5">
         <div className="flex-1">
-          <Link href="/" className="text-xl font-bold">
+          <Link href="/" className="text-xl font-bold lg:text-2xl xl:text-3xl">
             Logo
           </Link>
         </div>
         
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8 lg:gap-5 xl:gap-10">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-gray-600 hover:text-gray-900"
+              className="text-gray-600 hover:text-gray-900 md:text-lg lg:text-2xl xl:text-3xl"
             >
               {link.label}
             </Link>
           ))}
-          <button className="bg-blue-500 text-white px-4 text-xl py-2 rounded-md">Get Started</button>
+          <button className="bg-blue-500 text-white px-4 text-xl py-2 rounded-md lg:text-2xl lg:hover:bg-blue-600">Get Started</button>
         </div>
 
         {/* Mobile Menu Button */}

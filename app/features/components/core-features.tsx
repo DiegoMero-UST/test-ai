@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function CoreFeatures() {
   return (
-    <section className="px-5 py-20">
-      <h2 className="text-4xl font-bold text-center mb-16">Core Features</h2>
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+    <section className="px-5 py-20 xl:flex xl:flex-col xl:items-center">
+      <h2 className="text-4xl font-bold text-center mb-16 xl:text-5xl">Core Features</h2>
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-10 xl:flex xl:p-20">
         {/* AI Agent Customization */}
         <li className="flex flex-col gap-4 p-6 border-2 border-gray-200 rounded-lg hover:border-blue-500 transition-colors">
           <Image src="/botcustom2.png" alt="AI Agent Customization" width={1000} height={1000} className="object-contain" />

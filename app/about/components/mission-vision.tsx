@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function MissionVision() {
   return (
-    <section className="pt-40 pb-20 px-5">
+    <section className="pt-40 pb-20 px-5 xl:pt-52">
       <h2 className="text-5xl font-bold text-center mb-8">
         About Us
       </h2>
-      <div className="max-w-3xl mx-auto space-y-16">
+      <div className="max-w-3xl mx-auto flex flex-col gap-16 lg:flex-row lg:gap-5">
         {/* Mission Section */}
-        <div>
+        <div className="md:px-20 lg:px-0">
           <h2 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text">
             Mission
           </h2>
@@ -27,7 +27,7 @@ export default function MissionVision() {
         </div>
 
         {/* Vision Section */}
-        <div>
+        <div className="md:px-20 lg:px-0">
           <h2 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text">
             Vision
           </h2>
