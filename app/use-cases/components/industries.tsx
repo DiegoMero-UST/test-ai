@@ -68,7 +68,7 @@ export default function Industries() {
         {/* Call to Action */}
         <div className="mt-16 text-center">
           <p className="text-xl text-gray-700 mb-8">
-            Don't see your industry? Our AI solutions are highly adaptable and can be customized for any business need.
+            Don&apos;t see your industry? Our AI solutions are highly adaptable and can be customized for any business need.
           </p>
           <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
             Contact Us

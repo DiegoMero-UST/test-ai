@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function BlogPost() {
   const posts = [
     {
@@ -61,9 +63,11 @@ export default function BlogPost() {
           <div className="grid md:grid-cols-2 gap-8 items-center bg-white rounded-2xl shadow-lg overflow-hidden">
             <div className="relative h-[400px]">
               <div className="absolute inset-0 bg-gray-900/10" />
-              <img 
-                src={posts[0].image} 
+              <Image
+                src={posts[0].image}
                 alt={posts[0].title}
+                width={1000}
+                height={1000}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -76,20 +80,22 @@ export default function BlogPost() {
                   {posts[0].readTime}
                 </span>
               </div>
-              
+
               <h3 className="text-2xl font-bold mb-4">
                 {posts[0].title}
               </h3>
-              
+
               <p className="text-gray-600 mb-6">
                 {posts[0].excerpt}
               </p>
 
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <img 
-                    src={posts[0].author.avatar} 
+                  <Image
+                    src={posts[0].author.avatar}
                     alt={posts[0].author.name}
+                    width={1000}
+                    height={1000}
                     className="w-10 h-10 rounded-full"
                   />
                   <div>
@@ -106,19 +112,21 @@ export default function BlogPost() {
         {/* Regular Posts Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.slice(1).map((post, index) => (
-            <article 
+            <article
               key={index}
               className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
             >
               <div className="relative h-48">
                 <div className="absolute inset-0 bg-gray-900/10" />
-                <img 
-                  src={post.image} 
+                <Image
+                  src={post.image}
                   alt={post.title}
+                  width={1000}
+                  height={1000}
                   className="w-full h-full object-cover"
                 />
               </div>
-              
+
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <span className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium">
@@ -139,9 +147,11 @@ export default function BlogPost() {
 
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <img 
-                      src={post.author.avatar} 
+                    <Image
+                      src={post.author.avatar}
                       alt={post.author.name}
+                      width={1000}
+                      height={1000}
                       className="w-8 h-8 rounded-full"
                     />
                     <div>

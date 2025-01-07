@@ -170,7 +170,7 @@ export default function FAQ() {
             Still Have Questions?
           </h3>
           <p className="text-gray-600 mb-8">
-            Can't find the answer you're looking for? Please chat with our friendly team.
+            Can&apos;t find the answer you&apos;re looking for? Please chat with our friendly team.
           </p>
           <button className="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">
             Contact Support

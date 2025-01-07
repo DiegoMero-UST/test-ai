@@ -33,7 +33,7 @@ export default function ContactForm() {
       
       setStatus({ submitted: true, submitting: false, error: false });
       setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
+    } catch (_error) {
       setStatus({ submitted: false, submitting: false, error: true });
     }
   };

@@ -92,7 +92,7 @@ export default function Guides() {
                 </p>
 
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-gray-900">What you'll learn:</h4>
+                  <h4 className="font-semibold text-gray-900">What you&apos;ll learn:</h4>
                   <ul className="space-y-2">
                     {guide.steps.map((step, i) => (
                       <li key={i} className="flex items-center gap-2 text-gray-600">
