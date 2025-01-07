@@ -14,7 +14,7 @@ export default function Hero() {
           />
         ))}
       </div>
-      <h1 className="text-center text-5xl text-white font-bold bg-gradient-to-br from-[#3B82F6] to-white text-transparent bg-clip-text">Empowering Your Business with Smarter AI Solutions</h1>
+      <h1 className="text-center text-5xl font-bold bg-gradient-to-br from-[#3B82F6] to-white text-transparent bg-clip-text">Empowering Your Business with Smarter AI Solutions</h1>
       <h2 className="text-center text-3xl text-white">Automate repetitive tasks, minimize errors, and scale your business efficiently.</h2>
       <button className="bg-[#3386ff] text-white px-4 text-4xl py-2 rounded-md">Learn More</button>
     </section>
