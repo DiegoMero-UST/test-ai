@@ -25,11 +25,10 @@ export default function Partners() {
 
   return (
     <section className="pb-20 pt-20 xl:py-48 xl:flex xl:flex-col xl:gap-10">
-      <h2 className="text-4xl text-center mb-16 xl:text-6xl" data-aos="fade-up">Our Partners</h2>
+      <h2 className="text-4xl text-center mb-16 xl:text-6xl" >Our Partners</h2>
       
       <div className="px-10 md:px-20">
         <Swiper
-        data-aos="fade-up"
           modules={[Autoplay]}
           spaceBetween={30}
           slidesPerView={2}
