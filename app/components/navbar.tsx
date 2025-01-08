@@ -17,8 +17,8 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 right-0 z-10">
       {/* Auth Bar */}
       <div className="bg-gray-50 border-b border-gray-100">
-        <div className="flex justify-end items-center py-2 px-5 md:px-5 lg:px-10 xl:px-20">
-          <div className="flex items-center gap-4 text-sm">
+        <div className="flex justify-end items-center py-2 px-5 md:px-5 lg:px-10">
+          <div className="flex items-center gap-4 text-sm xl:px-20">
             <Link
               href="/login"
               className="flex items-center gap-1 text-gray-600 hover:text-gray-900"
