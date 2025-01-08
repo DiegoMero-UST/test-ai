@@ -37,14 +37,14 @@ export default function WhyUs() {
   ];
 
   return (
-    <section className="py-20 px-5">
+    <section className="py-20 px-5"> 
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center pb-16 bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text">
+        <h2 className="text-4xl font-bold text-center pb-16 bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text" data-aos="fade-up" data-aos-delay="100">
           Why Choose Us
         </h2>
 
         {/* Core Values */}
-        <div className="flex flex-wrap justify-center gap-4 mb-16">
+        <div className="flex flex-wrap justify-center gap-4 mb-16" data-aos="fade-up" data-aos-delay="200">
           {values.map((value, index) => (
             <span 
               key={index}
@@ -56,7 +56,7 @@ export default function WhyUs() {
         </div>
 
         {/* Advantages Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200"  >
           {advantages.map((advantage, index) => (
             <div 
               key={index}
@@ -76,7 +76,7 @@ export default function WhyUs() {
         </div>
 
         {/* Bottom Statement */}
-        <div className="mt-16 text-center">
+        <div className="mt-16 text-center" data-aos="fade-up" data-aos-delay="200">
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Join the hundreds of businesses that have already transformed their operations 
             with our AI solutions. Experience the difference of working with a leader in 

@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <section className="px-5 flex flex-col items-center py-20 xl:py-32 gap-10">
-      <h2 className="text-4xl font-bold xl:text-6xl">Key Features</h2>
+    <section className="px-5 flex flex-col items-center py-20 xl:py-32 gap-10" >
+      <h2 className="text-4xl font-bold xl:text-6xl" data-aos="fade-up" data-aos-delay="100">Key Features</h2>
       <ul className="flex flex-col items-center gap-10 md:px-36 lg:flex-row lg:items-stretch lg:px-5 w-full xl:px-20 xl:gap-20">
-        <li className="w-full border-2 border-[#E5E5E5] rounded-md p-5 flex flex-col items-start gap-2 hover:border-blue-500 transition-colors xl:gap-5">
+        <li className="w-full border-2 border-[#E5E5E5] rounded-md p-5 flex flex-col items-start gap-2 hover:border-blue-500 transition-colors xl:gap-5" data-aos="zoom-in" data-aos-delay="200">
           <Image
             src="/chatbot.png"
             alt="Chatbot"
@@ -22,7 +22,7 @@ export default function Features() {
             </svg>
           </button>
         </li>
-        <li className="w-full border-2 border-[#E5E5E5] rounded-md p-5 flex flex-col items-start gap-2 hover:border-blue-500 transition-colors xl:gap-5">
+        <li className="w-full border-2 border-[#E5E5E5] rounded-md p-5 flex flex-col items-start gap-2 hover:border-blue-500 transition-colors xl:gap-5" data-aos="zoom-in" data-aos-delay="200">
           <Image
             src="/chatbot.png"
             alt="Connect"
@@ -39,7 +39,7 @@ export default function Features() {
             </svg>
           </button>
         </li>
-        <li className="w-full border-2 border-[#E5E5E5] rounded-md p-5 flex flex-col items-start gap-2 hover:border-blue-500 transition-colors xl:gap-5">
+        <li className="w-full border-2 border-[#E5E5E5] rounded-md p-5 flex flex-col items-start gap-2 hover:border-blue-500 transition-colors xl:gap-5" data-aos="zoom-in" data-aos-delay="200">
           <Image
             src="/chatbot.png"
             alt="Metrics"

@@ -42,13 +42,14 @@ export default function PricingTiers() {
 
   return (
     <section className="pt-52 pb-20 px-5 bg-gray-50 xl:pt-64">
-      <h2 className="text-4xl font-bold text-center mb-16 lg:text-5xl">Looking for your best fit?</h2>
-      <h3 className="text-3xl font-bold text-center mb-16 lg:text-4xl">We&apos;ve got you covered!</h3>
+      <h2 className="text-4xl font-bold text-center mb-16 lg:text-5xl" data-aos="fade-up" data-aos-delay="100">Looking for your best fit?</h2>
+      <h3 className="text-3xl font-bold text-center mb-16 lg:text-4xl" data-aos="fade-up" data-aos-delay="200">We&apos;ve got you covered!</h3>
       <ul className="grid grid-cols-1 md:flex md:flex-col gap-8 max-w-7xl mx-auto md:px-32 lg:flex-row lg:px-5">
         {tiers.map((tier, index) => (
           <li 
             key={index}
             className="flex flex-col p-8 bg-white rounded-lg shadow-lg border-2 border-gray-100 hover:border-blue-500 transition-colors"
+            data-aos="fade-up"
           >
             <h3 className="text-3xl font-bold mb-4">{tier.name}</h3>
             <p className="text-4xl font-bold mb-8 text-blue-600">{tier.price}</p>

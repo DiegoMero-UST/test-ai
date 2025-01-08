@@ -17,7 +17,7 @@ export default function Hero() {
       </div>
 
       {/* Content wrapper with higher z-index */}
-      <div className="relative z-1 flex flex-col pt-48 gap-5 px-5 items-center md:px-10">
+      <div className="relative z-1 flex flex-col pt-48 gap-5 px-5 items-center md:px-10" data-aos="fade-up" data-aos-delay="100">
         <h1 className="text-center text-5xl font-bold bg-gradient-to-r from-[#3B82F6] to-white text-transparent bg-clip-text lg:text-6xl p-5 xl:text-8xl">
           Empowering Your Business with Smarter AI Solutions
         </h1>

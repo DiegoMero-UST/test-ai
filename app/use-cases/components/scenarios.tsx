@@ -50,7 +50,7 @@ export default function Scenarios() {
   return (
     <section className="py-20 px-5">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text lg:text-6xl">
+        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text lg:text-6xl" data-aos="fade-up" data-aos-delay="100">
           Real-World Scenarios
         </h2>
 
@@ -59,6 +59,7 @@ export default function Scenarios() {
             <div 
               key={index}
               className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all border-2 border-gray-100"
+              data-aos="flip-up"
             >
               <div className="mb-6">
                 {scenario.icon}

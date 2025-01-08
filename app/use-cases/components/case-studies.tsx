@@ -46,7 +46,7 @@ export default function CaseStudies() {
 
   return (
     <section className="py-20 px-5 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="100">
         <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text lg:text-6xl">
           Success Stories
         </h2>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CoreFeatures() {
   return (
-    <section className="px-5 py-20 xl:flex xl:flex-col xl:items-center">
+    <section className="px-5 py-20 xl:flex xl:flex-col xl:items-center" data-aos="fade-up" data-aos-delay="100">
       <h2 className="text-4xl font-bold text-center mb-16 xl:text-6xl">Core Features</h2>
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-10 xl:flex xl:p-20">
         {/* AI Agent Customization */}

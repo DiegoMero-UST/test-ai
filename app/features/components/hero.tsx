@@ -14,10 +14,10 @@ export default function Hero() {
           />
         ))}
       </div>
-      <h2 className="text-center text-5xl font-bold bg-gradient-to-br from-[#3B82F6] to-white text-transparent bg-clip-text lg:text-6xl xl:text-8xl">
+      <h2 className="text-center text-5xl font-bold bg-gradient-to-br from-[#3B82F6] to-white text-transparent bg-clip-text lg:text-6xl xl:text-8xl" data-aos="fade-up" data-aos-delay="100">
         Innovate, Automate, Dominate.
       </h2>
-      <p className="text-center text-4xl xl:text-5xl">
+      <p className="text-center text-4xl xl:text-5xl" data-aos="fade-up" data-aos-delay="200">
         Agentify.AI is more than just an automation tool. It is the perfect ally for your business and the guide to efficiency and your future.
       </p>
 

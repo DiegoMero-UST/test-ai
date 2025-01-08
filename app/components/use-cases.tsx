@@ -13,7 +13,7 @@ import 'swiper/css/autoplay';
 
 export default function UseCases() {
   return (
-    <section className="px-5 bg-gradient-to-br from-[#3B82F6] to-white py-20 xl:px-20 xl:py-32">
+    <section className="px-5 bg-gradient-to-br from-[#3B82F6] to-white py-20 xl:px-20 xl:py-32" data-aos="fade-up" data-aos-delay="100">
       <h2 className="text-4xl font-bold text-center py-5 xl:text-6xl">Let our work talk for us</h2>
       <h3 className="text-3xl text-center py-5 xl:text-4xl">Case Studies</h3>
       
