@@ -33,7 +33,7 @@ export default function ContactForm() {
       
       setStatus({ submitted: true, submitting: false, error: false });
       setFormData({ name: '', email: '', message: '' });
-    } catch (_error) {
+    }catch {
       setStatus({ submitted: false, submitting: false, error: true });
     }
   };
@@ -124,7 +124,7 @@ export default function ContactForm() {
           {/* Status Messages */}
           {status.submitted && (
             <p className="text-green-600 text-center">
-              Thank you for your message! We'll get back to you soon.
+              Thank you for your message! We&apos;ll get back to you soon.
             </p>
           )}
           {status.error && (
