@@ -47,10 +47,10 @@ export default function BlogPost() {
   ];
 
   return (
-    <section className="pb-20 pt-48 px-5">
+    <section className="pb-20 pt-48 px-5 xl:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text py-5 lg:text-6xl">
             Latest Insights
           </h2>
           <p className="text-xl text-gray-600">
@@ -174,7 +174,7 @@ export default function BlogPost() {
           <p className="text-gray-600 mb-8">
             Get the latest insights on AI and automation delivered to your inbox
           </p>
-          <form className="max-w-md mx-auto flex gap-4">
+          <form className="flex flex-col gap-4 md:flex-row p-5">
             <input
               type="email"
               placeholder="Enter your email"

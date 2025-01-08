@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MissionVision() {
   return (
-    <section className="pt-40 pb-20 px-5 xl:pt-52">
+    <section className="pt-52 pb-20 px-5 xl:pt-64">
       <h2 className="text-5xl font-bold text-center mb-8">
         About Us
       </h2>

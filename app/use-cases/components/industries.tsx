@@ -40,9 +40,9 @@ export default function Industries() {
   ];
 
   return (
-    <section className="pb-20 pt-48 px-5 bg-gray-50">
+    <section className="pb-20 pt-64 px-5 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text">
+        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text lg:text-6xl">
           Industries We Serve
         </h2>
 

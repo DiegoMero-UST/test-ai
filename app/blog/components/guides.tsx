@@ -54,10 +54,10 @@ export default function Guides() {
   ];
 
   return (
-    <section className="py-20 px-5">
+    <section className="py-20 px-5 xl:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text py-5 lg:text-6xl">
             How-To Guides
           </h2>
           <p className="text-xl text-gray-600">

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function CoreFeatures() {
   return (
     <section className="px-5 py-20 xl:flex xl:flex-col xl:items-center">
-      <h2 className="text-4xl font-bold text-center mb-16 xl:text-5xl">Core Features</h2>
+      <h2 className="text-4xl font-bold text-center mb-16 xl:text-6xl">Core Features</h2>
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-10 xl:flex xl:p-20">
         {/* AI Agent Customization */}
         <li className="flex flex-col gap-4 p-6 border-2 border-gray-200 rounded-lg hover:border-blue-500 transition-colors">

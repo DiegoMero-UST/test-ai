@@ -42,9 +42,9 @@ export default function UseCases() {
                 alt={`Case ${index}`}
                 className="object-contain rounded-2xl"
               />
-              <h4 className="text-2xl">Company {index}</h4>
-              <h5 className="text-xl">Optimizing the Loan Approval Process for a Financial Institution</h5>
-              <button className="text-xl py-3 flex justify-center items-center gap-3 bg-blue-600 font-semibold hover:bg-blue-700 transition-colors text-white rounded-md">
+              <h4 className="text-2xl xl:text-3xl">Company {index}</h4>
+              <h5 className="text-xl xl:text-2xl">Optimizing the Loan Approval Process for a Financial Institution</h5>
+              <button className="text-xl py-3 flex justify-center items-center gap-3 bg-blue-600 font-semibold hover:bg-blue-700 transition-colors text-white rounded-md xl:text-2xl">
                 Keep Reading
               </button>
             </div>

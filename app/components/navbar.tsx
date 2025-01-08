@@ -18,7 +18,7 @@ const Navbar = () => {
       {/* Auth Bar */}
       <div className="bg-gray-50 border-b border-gray-100">
         <div className="flex justify-end items-center py-2 px-5 md:px-5 lg:px-10">
-          <div className="flex items-center gap-4 text-sm xl:px-20">
+          <div className="flex items-center gap-4 text-sm xl:px-20 px-5">
             <Link
               href="/login"
               className="flex items-center gap-1 text-gray-600 hover:text-gray-900"
