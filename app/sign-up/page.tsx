@@ -2,20 +2,58 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { User, createUser } from './service/user-service';
 
 export default function SignUp() {
-  const [formData, setFormData] = useState({
-    fullName: '',
+  const [formData, setFormData] = useState<User>({
+    name: '',
+    company: '',
     email: '',
     password: '',
-    confirmPassword: '',
-    companyName: '',
+    password_confirmation: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle sign up logic here
+    try {
+      const newUser = await createUser(formData);
+      console.log('User created:', newUser);
+      setIsSuccess(true);
+    } catch (error) {
+      console.error('Error creating user:', error);
+    }
   };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  if (isSuccess) {
+    return (
+      <section className="min-h-screen flex items-center justify-center px-4 py-48">
+        <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-xl shadow-lg text-center">
+          <div className="text-green-600 mb-4">
+            <svg className="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">Success!</h2>
+          <p className="text-gray-600 mb-8">Your account has been created successfully.</p>
+          <Link 
+            href="/login" 
+            className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+          >
+            Go to Login
+          </Link>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-48">
@@ -27,113 +65,72 @@ export default function SignUp() {
         </div>
 
         {/* Form */}
-        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-          <div className="space-y-4">
-            <div>
-              <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">
-                Full Name
-              </label>
-              <input
-                id="fullName"
-                name="fullName"
-                type="text"
-                required
-                value={formData.fullName}
-                onChange={(e) => setFormData({...formData, fullName: e.target.value})}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                Work Email
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-                value={formData.email}
-                onChange={(e) => setFormData({...formData, email: e.target.value})}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="companyName" className="block text-sm font-medium text-gray-700">
-                Company Name
-              </label>
-              <input
-                id="companyName"
-                name="companyName"
-                type="text"
-                required
-                value={formData.companyName}
-                onChange={(e) => setFormData({...formData, companyName: e.target.value})}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-                Password
-              </label>
-              <input
-                id="password"
-                name="password"
-                type="password"
-                required
-                value={formData.password}
-                onChange={(e) => setFormData({...formData, password: e.target.value})}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700">
-                Confirm Password
-              </label>
-              <input
-                id="confirmPassword"
-                name="confirmPassword"
-                type="password"
-                required
-                value={formData.confirmPassword}
-                onChange={(e) => setFormData({...formData, confirmPassword: e.target.value})}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-              />
-            </div>
+        <form onSubmit={handleSubmit} className="max-w-md mx-auto p-4">
+          <div className="mb-4">
+            <label className="block mb-2">Name:</label>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+              required
+            />
           </div>
 
-          <div className="flex items-center">
+          <div className="mb-4">
+            <label className="block mb-2">Company Name:</label>
             <input
-              id="terms"
-              name="terms"
-              type="checkbox"
+              type="text"
+              name="company"
+              value={formData.company}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
               required
-              className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
             />
-            <label htmlFor="terms" className="ml-2 block text-sm text-gray-900">
-              I agree to the{' '}
-              <a href="#" className="text-blue-600 hover:text-blue-500">
-                Terms of Service
-              </a>{' '}
-              and{' '}
-              <a href="#" className="text-blue-600 hover:text-blue-500">
-                Privacy Policy
-              </a>
-            </label>
+          </div>
+
+          <div className="mb-4">
+            <label className="block mb-2">Email:</label>
+            <input
+              type="text"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+              required
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block mb-2">Password:</label>
+            <input
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+              required
+            />
           </div>
 
           <div>
-            <button
-              type="submit"
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-            >
-              Create Account
-            </button>
+            <label>Password Confirmation:</label>
+            <input
+              type="password"
+              name="password_confirmation"
+              value={formData.password_confirmation}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+            />
           </div>
+
+          <button
+            type="submit"
+            className="w-full bg-blue-500 text-white p-2 mt-4 rounded hover:bg-blue-600"
+          >
+            Create User
+          </button>
         </form>
 
         {/* Sign in link */}
