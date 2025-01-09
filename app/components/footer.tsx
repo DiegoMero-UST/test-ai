@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="bg-black text-white py-12 md:px-10 lg:flex lg:flex-col lg:items-center lg:justify-center">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Quick Links */}
           <div>
             <h4 className="text-xl font-bold mb-4">Quick Links</h4>
@@ -21,6 +21,7 @@ export default function Footer() {
               <li><Link href="/blog" className="hover:text-gray-300 transition-colors">Blog</Link></li>
               <li><Link href="/contact" className="hover:text-gray-300 transition-colors">Contact</Link></li>
               <li><Link href="/faq" className="hover:text-gray-300 transition-colors">FAQ</Link></li>
+              <li><Link href="/integration" className="hover:text-gray-300 transition-colors">Integration (Dev)</Link></li>
             </ul>
           </div>
 
