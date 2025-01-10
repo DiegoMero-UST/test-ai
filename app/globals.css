@@ -6,8 +6,3 @@
 .swiper-button-next::after {
   font-size: 30px !important;
 }
-
-
-.swiper-pagination {
-  bottom: 0 !important;
-}
